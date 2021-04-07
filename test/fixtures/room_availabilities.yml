@@ -1,0 +1,63 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ra_date: 2021-04-07 09:56:18
+  room: 
+  12_am: 
+  1_am: 
+  2_am: 
+  3_am: 
+  4_am: 
+  5_am: 
+  6_am: 
+  7_am: 
+  8_am: 
+  8_am: 
+  9_am: MyString
+  bool: MyString
+  10_am: MyString
+  bool: MyString
+  11_am: 
+  12_pm: 
+  1_pm: 
+  2_pm: 
+  3_pm: 
+  4_pm: 
+  5_pm: 
+  6_pm: 
+  7_pm: 
+  8_pm: 
+  9_pm: 
+  10_pm: 
+  11_pm: 
+
+two:
+  ra_date: 2021-04-07 09:56:18
+  room: 
+  12_am: 
+  1_am: 
+  2_am: 
+  3_am: 
+  4_am: 
+  5_am: 
+  6_am: 
+  7_am: 
+  8_am: 
+  8_am: 
+  9_am: MyString
+  bool: MyString
+  10_am: MyString
+  bool: MyString
+  11_am: 
+  12_pm: 
+  1_pm: 
+  2_pm: 
+  3_pm: 
+  4_pm: 
+  5_pm: 
+  6_pm: 
+  7_pm: 
+  8_pm: 
+  9_pm: 
+  10_pm: 
+  11_pm: 
