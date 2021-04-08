@@ -1,2 +1,11 @@
-<h1>Method#method2</h1>
-<p>Find me in app/views/method/method2.html.erb</p>
+<body>
+  <div>
+    <div class="jumbotron">
+      <%= datagrid_form_for @room_availability_grid, :method => :get, :url => method_method2_url %>
+
+      <%= paginate(@room_availability_grid.assets) %>
+      <%= datagrid_table @room_availability_grid %>
+    </div>
+  </div>
+</body>
+

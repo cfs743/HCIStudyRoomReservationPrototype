@@ -1,2 +1,40 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+
+<body>
+<div class="container theme-showcase" role="main">
+
+<div></div>
+  <div class="jumbotron">
+    <h1>Download Your Schedule</h1>
+    <p>Instructions for downloading schedule</p>
+    <%= link_to 'Download Schedule', home_download_schedule_url %>
+  </div>
+  <div class="jumbotron">
+    <h1>Case Scenarios</h1>
+    <h2>1: Soonest Available </h2>
+    <p>You get out of class and decide you want to schedule a study room to do some homework in until your next class. Schedule the soonest available reservation.</p>
+    <h2>2: Many Constraints</h2>
+    <p>You want to schedule a study room for this week to meet for a group project. Schedule a reservation this week at a time where other people would also probably be available.</p>
+    <h2>3: Few Constraints</h2>
+    <p> You have a test in two weeks and want to schedule a study room to prepare for it. Schedule a reservation some time in between now and the test.</p>
+  </div>
+  <div class="jumbotron">
+    <h1>Select a Method</h1>
+    <p>The order is not important</p>
+    <div class="row">
+      <div class="col-md-2">
+        <%= button_to "Method 1", method_method1_url, class:"btn btn-lg btn-default", method: :get %>
+      </div>
+      <div class="col-md-2">
+        <%= button_to "Method 2", method_method2_url, class:"btn btn-lg btn-default", method: :get %>
+      </div>
+      <div class="col-md-2">
+        <%= button_to "Method 3", method_method3_url, class:"btn btn-lg btn-default", method: :get %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div>
+  <%= button_to "Start", 'home/start', class: "btn btn-lg btn-default", method: :get %>
+</div>
+</body>
