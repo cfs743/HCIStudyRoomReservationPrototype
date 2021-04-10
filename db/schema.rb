@@ -56,9 +56,10 @@ ActiveRecord::Schema.define(version: 2021_04_07_145618) do
   end
 
   create_table "time_availabilities", force: :cascade do |t|
-    t.datetime "ta_date_time"
+    t.date "ta_date"
+    t.integer "ta_day"
+    t.time "ta_time"
     t.integer "rooms_reserved"
-    t.integer "rooms_available"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

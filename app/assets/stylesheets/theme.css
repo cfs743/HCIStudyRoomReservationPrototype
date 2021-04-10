@@ -16,3 +16,69 @@ body {
   .theme-showcase .navbar .container {
     width: auto;
   }
+
+
+  .availability-0{
+    background-color: #0DBD1C;
+    color: #0DBD1C;
+  }
+
+  .availability-1{
+    background-color: #13B020 !important;
+    color: #13B020;
+  }
+
+  .availability-2{
+    background-color: #19A225;
+    color: #19A225;
+  }
+
+  .availability-3{
+    background-color: #1F9529;
+    color: #1F9529;
+  }
+
+  .availability-4{
+    background-color: #25872E;
+    color: #25872E;
+  }
+
+  .availability-5{
+    background-color: #2C7A32;
+    color: #2C7A32;
+  }
+
+  .availability-6{
+    background-color: #326C37;
+    color: #326C37;
+  }
+
+  .availability-7{
+    background-color: #385F3B;
+    color: #385F3B;
+  }
+
+  .availability-8{
+    background-color: #3E5140;
+    color: #3E5140;
+  }
+
+  .availability-9{
+    background-color: #3E5140;
+    color: #3E5140;
+  }
+
+  .availability-10{
+    background-color: #444444;
+    color: #444444;
+  }
+
+  .availability-false{
+    background-color: #444444;
+    color: #444444;
+  }
+
+  .availability-true{
+    background-color: #0DBD1C;
+    color: #0DBD1C;
+  }

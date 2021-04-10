@@ -11,6 +11,10 @@ class MethodController < ApplicationController
   end
 
   def method3
+    puts params
+    @time_availability_grid = TimeAvailabilityGrid.new(ta_grid_params) do |scope|
+      scope.page(params[:page])
+    end
   end
 
   protected
@@ -18,4 +22,9 @@ class MethodController < ApplicationController
   def ra_grid_params
     params.fetch(:room_availability_grid, {}).permit!
   end
+
+  def ta_grid_params
+    params.fetch(:time_availability_grid, {}).permit!
+  end
+
 end

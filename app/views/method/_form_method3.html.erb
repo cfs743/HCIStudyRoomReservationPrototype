@@ -1,0 +1,14 @@
+<%= form_with(model: @time_availability) do |t| %>
+
+  <table>
+    <tr>
+      <th>Date</th>
+      <td><%= t.datetime_select(:ta_date_time)%></td>
+    </tr>
+  </table>
+
+  <div class="form-buttons">
+    <%= t.submit("Submit") %>
+  </div>
+
+<% end %>

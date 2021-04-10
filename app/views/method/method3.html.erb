@@ -1,2 +1,34 @@
-<h1>Method#method3</h1>
-<p>Find me in app/views/method/method3.html.erb</p>
+<body>
+  <div>
+    <div class="jumbotron">
+      <h1>Method 3</h1>
+    </div>
+    <div class="jumbotron">
+      <%= datagrid_form_for @time_availability_grid, :method => :get, :url => method_method3_url %>
+    </div>
+    <div class="jumbotron">
+      <div class="row">
+        <div class="col-md-2">
+          <p><strong><%= (Date.parse("2021-04-#{(@time_availability_grid.ta_day)}")).strftime("%A, %b %e") %></strong></p>
+          <%= datagrid_table @time_availability_grid %>
+        </div>
+        
+        <div class="col-md-2">
+          <p><strong><%= (Date.parse("2021-04-#{(@time_availability_grid.ta_day = @time_availability_grid.ta_day.to_i + 1)}")).strftime("%A, %b %e") %></strong></p>
+          <%= datagrid_table @time_availability_grid %>
+        </div>
+        
+        <div class="col-md-2">
+        <p><strong><%= (Date.parse("2021-04-#{(@time_availability_grid.ta_day = @time_availability_grid.ta_day.to_i + 1)}")).strftime("%A, %b %e") %></strong></p>
+          <%= datagrid_table @time_availability_grid %>
+        </div>
+        
+        <div class="col-md-2">
+        <p><strong><%= (Date.parse("2021-04-#{(@time_availability_grid.ta_day = @time_availability_grid.ta_day.to_i + 1)}")).strftime("%A, %b %e") %></strong></p>
+          <%= datagrid_table @time_availability_grid %>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+

@@ -1,8 +1,13 @@
+
 <body>
   <div>
     <div class="jumbotron">
+      <h1>Method 2</ht>
+    </div>
+    <div class="jumbotron">
       <%= datagrid_form_for @room_availability_grid, :method => :get, :url => method_method2_url %>
-
+    </div>
+    <div class="jumbotron">
       <%= paginate(@room_availability_grid.assets) %>
       <%= datagrid_table @room_availability_grid %>
     </div>
