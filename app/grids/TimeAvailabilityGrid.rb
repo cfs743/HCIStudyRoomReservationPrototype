@@ -22,7 +22,7 @@ class TimeAvailabilityGrid < BaseGrid
 
   column(:rooms_reserved, :header => "Availability", :mandatory => true) do |model|
     format(model.rooms_reserved) do |value|
-      content_tag(:td, content_tag(:a, content_tag(:div, value, class:"availability-#{value}"), href:reservation_new_url(:reservation => {:start_date_time => DateTime.new(2021, 3, model.ta_day, model.ta_time.hour),
+      content_tag(:td, content_tag(:a, content_tag(:div, value, class:"availability-#{value}"), href:reservation_new_url(:reservation => {:start_date_time => DateTime.new(2021, 4, model.ta_day, model.ta_time.hour),
       :end_date_time => DateTime.new(2021, 3, model.ta_day, model.ta_time.hour + 1),
       :room => 1})), class:"availability-#{value}")
     end
