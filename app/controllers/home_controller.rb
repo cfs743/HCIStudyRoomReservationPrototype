@@ -6,10 +6,9 @@ class HomeController < ApplicationController
   end
 
   def download_schedule
-    send_file(
-      "#Rails.root}/public/example_schedule.pdf",
-      filename: "example_schedule.pdf",
-      type: "application/pdf"
-    )
+    file = "#{Rails.root}/public/instructions_and_schedule.pdf"
+    File.open(file, 'r') do |f|
+      send_data f.read.force_encoding('BINARY'), :filename => "instructions_and_schedule.pdf"
+    end
   end
 end

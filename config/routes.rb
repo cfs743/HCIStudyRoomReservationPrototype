@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
   resources :skills
-  get 'reservation/new'
-  get 'reservation/create'
+  get 'reservation/new' => 'reservation#new'
   get 'reservation/confirmation'
   get 'method/method1'
   get 'method/method2'

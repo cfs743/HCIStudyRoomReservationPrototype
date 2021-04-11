@@ -48,8 +48,8 @@ csv = CSV.parse(csv_text, :headers => true, :encoding => 'ISO-8859-1')
 csv.each do |row|
     r = RoomAvailability.new
 
-    r.ra_date = row['ra_date']
-    r.room = row['room']
+    r.ra_date = row['Date']
+    r.room = row['Room']
     r._12_am = row['_12_am']
     r._1_am = row['_1_am']
     r._2_am = row['_2_am']

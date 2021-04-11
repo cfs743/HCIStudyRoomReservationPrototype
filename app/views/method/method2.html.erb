@@ -2,9 +2,12 @@
 <body>
   <div>
     <div class="jumbotron">
-      <h1>Method 2</ht>
+      <h1>Method 2</h1>
+      <%= link_to "Back", "/home/start" %>
     </div>
     <div class="jumbotron">
+      <p>In this method, an available room at a certain time is represented by a green slot, while an unavailable room at a certain time is represented by a gray slot.</p>
+      <p>Click on a slot to create a reservation.</p>
       <%= datagrid_form_for @room_availability_grid, :method => :get, :url => method_method2_url %>
     </div>
     <div class="jumbotron">

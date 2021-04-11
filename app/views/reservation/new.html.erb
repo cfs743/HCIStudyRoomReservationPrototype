@@ -5,9 +5,10 @@
 <div></div>
   <div class="jumbotron">
     <h1>Create a Reservation</h1>
+    <%= link_to "Back", '/home/start' %>
   </div>
   <div class="jumbotron">
-    <%= form_with(model: @reservation, url:reservation_new_url) do |r| %>
+    <%= form_with(model: @reservation, url:reservation_new_url(@reservation)) do |r| %>
 
         <table>
         <tr>
@@ -16,11 +17,11 @@
         </tr>
         <tr>
             <th>Start Date and Time</th>
-            <td><%= r.datetime_select(:start_date_time, ampm: true,  minute_step: 60, order: [:day, :month, :year, :hour])%></td>
+            <td><%= r.datetime_select(:start_date_time, ampm: true, discard_minute:true, order: [:day, :month, :year, :hour])%></td>
         </tr>
         <tr>
             <th>End Date and Time</th>
-            <td><%= r.datetime_select(:end_date_time, ampm: true)%></td>
+            <td><%= r.datetime_select(:end_date_time, ampm: true, discard_minute:true, order: [:day, :month, :year, :hour])%></td>)%></td>
         </tr>
         <tr>
             <th>Room</th>
@@ -37,7 +38,7 @@
         </table>
     
         <div class="form-buttons">
-        <%= r.submit("Create Reservation") %>
+        <%= link_to "Create Reservation", "/reservation/confirmation" %>
         </div>
     
     <% end %>

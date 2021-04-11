@@ -4,22 +4,35 @@
 
 <div></div>
   <div class="jumbotron">
+    <h2>In this study, you will be reserving study spaces in a building on campus that has 10 study rooms available to reserve through their online system.</h2>
+    <h2>For the purposes of this study,</h2>
+    <ul>
+      <li><p>The capacity of the room will be adequate for your reservation</p></li>
+      <li><p>All rooms have the same resources and furniture</p></li>
+      <li><p>You will be asked for your email and name to simulate true-to-life reservations, but these will NOT be recorded—feel free to put any text you
+      like if you are uncomfortable entering that information</p></li>
+      <li><p>The application will claim to send you a confirmation email after each reservation—you will not receive these
+      </p></li>
+      <li><p>Reservation start and end times will be rounded to the nearest hour for simplicity</p></li>
+      <li><p>We will only be considering the month of April</p></li>
+    </ul>
+  </div>
+  <div class="jumbotron">
     <h1>Download Your Schedule</h1>
     <p>Instructions for downloading schedule</p>
     <%= link_to 'Download Schedule', home_download_schedule_url %>
   </div>
   <div class="jumbotron">
-    <h1>Case Scenarios</h1>
+    <h1>Scenarios</h1>
     <h2>1: Soonest Available </h2>
-    <p>You get out of class and decide you want to schedule a study room to do some homework in until your next class. Schedule the soonest available reservation.</p>
+    <p>You get out of your second class on Monday and decide you want to schedule a study room to do some homework in until your next class. Schedule the soonest available reservation.</p>
     <h2>2: Many Constraints</h2>
-    <p>You want to schedule a study room for this week to meet for a group project. Schedule a reservation this week at a time where other people would also probably be available.</p>
+    <p>You want to schedule a study room for this week to meet for a group project for the online class you take second on Tuesdays. Schedule a reservation this week at a time where other people would also probably be available.</p>
     <h2>3: Few Constraints</h2>
     <p> You have a test in two weeks and want to schedule a study room to prepare for it. Schedule a reservation some time in between now and the test.</p>
   </div>
   <div class="jumbotron">
     <h1>Select a Method</h1>
-    <p>The order is not important</p>
     <div class="row">
       <div class="col-md-2">
         <%= button_to "Method 1", method_method1_url, class:"btn btn-lg btn-default", method: :get %>

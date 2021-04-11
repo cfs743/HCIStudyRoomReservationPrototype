@@ -2,8 +2,11 @@
   <div>
     <div class="jumbotron">
       <h1>Method 3</h1>
+      <%= link_to "Back", "/home/start" %>
     </div>
     <div class="jumbotron">
+      <p>In this method, availability is represented in a gradient where the most green slots are the most available, and the most gray slots are completely booked.</p> 
+      <p>Click on a slot to create a reservation.</p>
       <%= datagrid_form_for @time_availability_grid, :method => :get, :url => method_method3_url %>
     </div>
     <div class="jumbotron">
@@ -23,6 +26,11 @@
           <%= datagrid_table @time_availability_grid %>
         </div>
         
+        <div class="col-md-2">
+        <p><strong><%= (Date.parse("2021-04-#{(@time_availability_grid.ta_day = @time_availability_grid.ta_day.to_i + 1)}")).strftime("%A, %b %e") %></strong></p>
+          <%= datagrid_table @time_availability_grid %>
+        </div>
+
         <div class="col-md-2">
         <p><strong><%= (Date.parse("2021-04-#{(@time_availability_grid.ta_day = @time_availability_grid.ta_day.to_i + 1)}")).strftime("%A, %b %e") %></strong></p>
           <%= datagrid_table @time_availability_grid %>
